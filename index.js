@@ -12,7 +12,6 @@ var grunt = require('grunt'),
 
 // 覆盖grunt.task.init方法, 去掉的gruntfile文件
 grunt.task.init = function(tasks, options) {
-    debugger
   if (!options) { options = {}; }
 
   // Were only init tasks specified?
@@ -60,6 +59,7 @@ grunt.task.init = function(tasks, options) {
 // 设置当前目录为插件根目录
 process.chdir(__dirname);
 grunt.loadNpmTasks('grunt-contrib-qunit');
+process.chdir(projectRoot);
 module.exports = function(content, file, conf){
     if (!flag) {
         return;
