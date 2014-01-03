@@ -59,6 +59,7 @@ grunt.task.init = function(tasks, options) {
 // 设置当前目录为插件根目录
 process.chdir(__dirname);
 grunt.loadNpmTasks('grunt-contrib-qunit');
+// 设置当前目录为项目根目录
 process.chdir(projectRoot);
 module.exports = function(content, file, conf){
     if (!flag) {
