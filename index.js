@@ -1,6 +1,7 @@
 /*
- * 
+ * qunit test
  * http://fis.baidu.com/
+ * @author jason.zhou
  */
 
 'use strict';
